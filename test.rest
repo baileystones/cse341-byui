@@ -3,3 +3,30 @@ GET http://localhost:3000/contacts
 
 ### Get one contact
 GET http://localhost:3000/contacts/68d8be2fef95b0a732323415
+
+### Create a new contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Avery",
+  "lastName": "Stones",
+  "email": "averys@wildcat.com",
+  "favoriteColor": "Purple",
+  "birthday": "2006-09-20"
+}
+
+### Update a contact
+PUT http://localhost:3000/contacts/68e2009115542d93853a220b
+Content-Type: application/json
+
+{
+  "firstName": "Avery",
+  "lastName": "Walters",
+  "email": "averys@tiger.com",
+  "favoriteColor": "Orange",
+  "birthday": "2006-07-11"
+}
+
+### Delete a contact
+DELETE http://localhost:3000/contacts/6340f87c5a1c123456789abc
